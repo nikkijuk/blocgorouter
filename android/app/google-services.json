@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534787050819",
+    "project_id": "blocgorouter",
+    "storage_bucket": "blocgorouter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534787050819:android:8518cc46310cbfdd81b3f6",
+        "android_client_info": {
+          "package_name": "fi.nikkijuk.blocgorouter.blocgorouter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534787050819-4h6rvabrkaug920jdm4pg8r8ddhfj9g1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWQeS19hEd23sc6I_65zMfJ1oCynAY95s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534787050819-4h6rvabrkaug920jdm4pg8r8ddhfj9g1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -69,16 +69,11 @@ GoRouter router(BuildContext ctx) => GoRouter(
           orElse: () => false,
         );
 
-        // TODO(jnikki): not authenticated => go to login
-        // TODO(jnikki): otherwise => no redirect (return null)
-
-        // ignore: omit_local_variable_types
-        final String? target = state.maybeWhen(
-          // TODO(jnikki): userAuthenticated => home rule is nonsense
-          // when user gets authenticated (state change happens) go home
-          //userAuthenticated: (AuthenticatedUser user) => Routes.home,
+        final target = state.maybeWhen(
           // no need to redirect
-          orElse: () => null,
+          authenticated: (AuthenticatedUser user) => null,
+          // when user is not authenticated go login
+          orElse: () => Routes.login,
         );
 
         // TODO(jnikki): add proper logging
