@@ -57,7 +57,6 @@ List<GoRoute> routes() => [
 // redirect and finding blocs needs build context
 GoRouter router(BuildContext ctx) => GoRouter(
       redirect: (context, state) {
-
         // get state from authentication bloc
         final state = BlocProvider.of<AuthenticationBloc>(context).state;
 
