@@ -8,20 +8,6 @@ import 'package:go_router/go_router.dart';
 
 import 'routing.dart';
 
-/*
-extension PumpApp on WidgetTester {
-  Future<void> pumpApp(Widget widget) {
-    return pumpWidget(
-      MaterialApp(
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
-        supportedLocales: AppLocalizations.supportedLocales,
-        home: widget,
-      ),
-    );
-  }
-}
-*/
-
 extension PumpApp on WidgetTester {
   /// pumpApp can be used when routing is not needed in test
   Future<void> pumpApp(Widget widget) {
@@ -36,29 +22,6 @@ extension PumpApp on WidgetTester {
     final fullApp = MultiBlocProvider(
       providers: [
         BlocProvider<AuthenticationBloc>(create: (_) => AuthenticationBloc()),
-      ],
-      child: app,
-    );
-
-    return pumpWidget(fullApp);
-  }
-
-  /// pumpAuthenticateApp can be used when authentication is needed in test
-  Future<void> pumpAuthenticatedApp(
-    Widget widget,
-    AuthenticationBloc authenticationBloc,
-  ) {
-    initFirebase();
-
-    final app = MaterialApp(
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: widget,
-    );
-
-    final fullApp = MultiBlocProvider(
-      providers: [
-        BlocProvider<AuthenticationBloc>(create: (_) => authenticationBloc),
       ],
       child: app,
     );
@@ -103,30 +66,6 @@ extension PumpRealRouterApp on WidgetTester {
     final fullApp = MultiBlocProvider(
       providers: [
         BlocProvider<AuthenticationBloc>(create: (_) => AuthenticationBloc()),
-      ],
-      child: app,
-    );
-
-    return pumpWidget(fullApp);
-  }
-
-  /// pumpRealRouterApp can be used when real routing is needed in test
-  Future<void> pumpAuthenticatedRealRouterApp(
-    GoRouter router,
-    AuthenticationBloc authenticationBloc,
-  ) {
-    initFirebase();
-
-    final app = MaterialApp.router(
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      routeInformationParser: router.routeInformationParser,
-      routerDelegate: router.routerDelegate,
-    );
-
-    final fullApp = MultiBlocProvider(
-      providers: [
-        BlocProvider<AuthenticationBloc>(create: (_) => authenticationBloc),
       ],
       child: app,
     );

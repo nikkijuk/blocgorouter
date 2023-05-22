@@ -1,7 +1,4 @@
 import 'package:blocgorouter/app/app.dart';
-import 'package:blocgorouter/domain/authentication/authenticated_user.dart';
-import 'package:blocgorouter/features/authentication/bloc/authentication_bloc.dart';
-import 'package:blocgorouter/features/authentication/bloc/authentication_event.dart';
 import 'package:blocgorouter/features/counter/view/counter_page.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -12,11 +9,8 @@ void main() {
     testWidgets(
       'renders CounterPage',
       (tester) async {
-        const user = AuthenticatedUser(id: '123');
-
-        await tester.pumpAuthenticatedApp(
+        await tester.pumpApp(
           const App(),
-          AuthenticationBloc()..add(const LogIn(user)),
         );
 
         // router redirect brings user to login page
