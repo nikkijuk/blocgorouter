@@ -7,7 +7,7 @@ environment:
   sdk: ">=2.19.0 <4.0.0"
 
 dependencies:
-  bloc: ^8.1.1
+  bloc: ^8.1.2
   firebase_auth: ^4.6.1
   firebase_core: ^2.13.0
   firebase_ui_auth: ^1.4.1
