@@ -21,7 +21,7 @@ dependencies:
   intl: any # uses transitive dependency from flutter_localizations
 
 dev_dependencies:
-  bloc_test: ^9.1.1
+  bloc_test: ^9.1.2
   build_runner: ^2.4.4
   flutter_test:
     sdk: flutter
