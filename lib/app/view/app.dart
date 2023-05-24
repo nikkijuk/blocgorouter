@@ -1,3 +1,5 @@
+// coverage:ignore-file
+
 import 'package:blocgorouter/config/firebase_config.dart';
 import 'package:blocgorouter/config/router_config.dart';
 import 'package:blocgorouter/features/authentication/bloc/authentication_bloc.dart';
