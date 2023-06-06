@@ -22,7 +22,7 @@ dependencies:
 
 dev_dependencies:
   bloc_test: ^9.1.2
-  build_runner: ^2.4.4
+  build_runner: ^2.4.5
   flutter_test:
     sdk: flutter
   freezed: ^2.3.5
