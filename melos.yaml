@@ -10,6 +10,14 @@ packages:
 
 scripts:
 
+  format:
+    description: Format Dart code.
+    run: dart format .
+
+  format:check:
+    description: Check formatting of Dart code.
+    run: dart format --output none --set-exit-if-changed .
+
   analyze:
     run: |
       melos exec -c 1 -- \
