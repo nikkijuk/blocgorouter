@@ -1,3 +1,6 @@
+# see options at
+# https://docs.flutter.dev/accessibility-and-localization/internationalization#configuring-the-l10nyaml-file
+
 arb-dir: lib/l10n/arb
 template-arb-file: app_en.arb
 output-localization-file: app_localizations.dart
