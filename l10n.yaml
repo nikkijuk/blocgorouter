@@ -1,7 +1,28 @@
 # see options at
 # https://docs.flutter.dev/accessibility-and-localization/internationalization#configuring-the-l10nyaml-file
 
+# see help
+# $ flutter gen-l10n --help
+
 arb-dir: lib/l10n/arb
 template-arb-file: app_en.arb
 output-localization-file: app_localizations.dart
+output-dir: lib/l10n
 nullable-getter: false
+
+# Determines whether or not the generated output files will be generated as a synthetic package
+# or at a specified directory in the Flutter project.
+#   short: decide if you want to have generated files as part of source code or not
+#   if not, they will be generated to .dart_tool/flutter_gen
+# NOTE: using synthetic fackages might be required for localization workflows to function
+synthetic-package: false
+
+# for headers
+# header: /// this is header
+# header-file: <add here file name>
+
+# if one needs to create list for checking translations manually
+# untranslated-messages-file: <filename>
+
+# defaults to "AppLocalizations", which is ok for now
+#output-class: S
