@@ -3,10 +3,9 @@
 import 'package:blocgorouter/config/firebase_config.dart';
 import 'package:blocgorouter/config/router_config.dart';
 import 'package:blocgorouter/features/authentication/bloc/authentication_bloc.dart';
+import 'package:blocgorouter/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../l10n/app_localizations.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
