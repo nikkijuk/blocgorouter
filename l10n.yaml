@@ -17,8 +17,8 @@ nullable-getter: false
 # NOTE: using synthetic fackages might be required for localization workflows to function
 synthetic-package: false
 
-# for headers
-# header: /// this is header
+# for headers - here one can set ignores if needed
+header: // coverage:ignore-file
 # header-file: <add here file name>
 
 # if one needs to create list for checking translations manually
