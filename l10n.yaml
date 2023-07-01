@@ -14,7 +14,7 @@ nullable-getter: false
 # or at a specified directory in the Flutter project.
 #   short: decide if you want to have generated files as part of source code or not
 #   if not, they will be generated to .dart_tool/flutter_gen
-# NOTE: using synthetic fackages might be required for localization workflows to function
+# NOTE: using synthetic packages might be required for localization workflows to function
 synthetic-package: false
 
 # for headers - here one can set ignores if needed
