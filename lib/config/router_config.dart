@@ -49,7 +49,7 @@ List<GoRoute> routes() => [
       GoRoute(
         path: Routes.forgotPassword,
         builder: (context, state) => ForgotPasswordPage(
-          state.queryParameters['email']!,
+          state.uri.queryParameters['email']!,
         ),
       )
     ];
