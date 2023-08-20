@@ -51,7 +51,7 @@ List<GoRoute> routes() => [
         builder: (context, state) => ForgotPasswordPage(
           state.uri.queryParameters['email']!,
         ),
-      )
+      ),
     ];
 
 // redirect and finding blocs needs build context
