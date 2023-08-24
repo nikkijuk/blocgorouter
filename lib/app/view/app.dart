@@ -12,6 +12,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     initFirebase();
 
     // to add more embedding MultiRepositoryProvider
