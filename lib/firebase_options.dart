@@ -69,7 +69,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '534787050819',
     projectId: 'blocgorouter',
     storageBucket: 'blocgorouter.appspot.com',
-    iosClientId: '534787050819-sg7tcu2qstevjtuquts96plonr76plal.apps.googleusercontent.com',
+    iosClientId:
+        '534787050819-sg7tcu2qstevjtuquts96plonr76plal.apps.googleusercontent.com',
     iosBundleId: 'fi.nikkijuk.blocgorouter.blocgorouter',
   );
 }
